@@ -441,3 +441,29 @@ footer a {
         padding: 1em 12em;
     }
 }
+
+/* STAMPA */
+
+@media print {
+
+    body, main {
+        padding: 0;
+    }
+
+    main {
+        box-shadow: none;
+    }
+
+    header, aside, iframe, section, footer {
+        display: none;
+    }
+
+    table {
+        width: 70%;
+        max-width: 650px;
+    }
+
+    article {
+        font-size: 1.1em;
+    }
+}
